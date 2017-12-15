@@ -314,6 +314,11 @@ net.tcp.2g_init_rwnd=10
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
 
+# Fling Velocity
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.min.fling_velocity=160 \
+ro.max.fling_velocity=20000
+
 # Wi-Fi Display
 PRODUCT_SYSTEM_PROPERTIES += \
 media.wfd.max_resolution=5
