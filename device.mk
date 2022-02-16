@@ -487,3 +487,7 @@ ifeq ($(USE_NFSparts),true)
    PRODUCT_PACKAGES += \
        NFSParts
 endif
+
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings \
+    SystemUI
