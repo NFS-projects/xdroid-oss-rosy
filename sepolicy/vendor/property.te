@@ -1,9 +1,6 @@
 # fingerprint prop
 vendor_public_prop(hal_fingerprint_prop);
 
-# mwqem property
-vendor_restricted_prop(vendor_mwqem_prop);
-
 # Power HAL
 vendor_internal_prop(vendor_power_propg);
 

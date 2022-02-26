@@ -11,7 +11,6 @@ persist.camera.					u:object_r:camera_prop:s0
 persist.debug.sf.showfps			u:object_r:camera_prop:s0
 persist.net.doxlat				u:object_r:vendor_xlat_prop:s0
 persist.partial.skip				u:object_r:camera_prop:s0
-persist.vendor.mwqem.				u:object_r:vendor_mwqem_prop:s0
 ro.camera.req.fmq.size				u:object_r:camera_prop:s0
 ro.camera.res.fmq.size				u:object_r:camera_prop:s0
 ro.product.wt.boardid				u:object_r:camera_prop:s0
