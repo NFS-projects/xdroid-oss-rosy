@@ -37,6 +37,6 @@ genfscon sysfs /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-01/200f000.q
 genfscon sysfs /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8940@3:qcom,haptics@c000/leds/vibrator	u:object_r:sysfs_leds:s0
 
 # NFSParts
-get_prop(hal_audio_default, dirac_prop)
-set_prop(hal_audio_default, dirac_prop)
-allow hal_audio_default dirac_prop:file { open read getattr };
+genfscon sysfs /kernel/sound_control/headphone_gain                u:object_r:sysfs_hgain:s0
+genfscon sysfs /kernel/sound_control/mic_gain                      u:object_r:sysfs_mgain:s0
+genfscon sysfs /kernel/sound_control/speaker_gain                  u:object_r:sysfs_sgain:s0
