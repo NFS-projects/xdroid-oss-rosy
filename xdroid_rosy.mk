@@ -24,7 +24,7 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := false
 $(call inherit-product, device/xiaomi/rosy/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := aosp_rosy
+PRODUCT_NAME := xdroid_rosy
 PRODUCT_DEVICE := rosy
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5
