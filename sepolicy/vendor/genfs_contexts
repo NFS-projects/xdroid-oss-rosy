@@ -35,3 +35,8 @@ genfscon sysfs /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-01/200f000.q
 
 # Vibrator
 genfscon sysfs /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8940@3:qcom,haptics@c000/leds/vibrator	u:object_r:sysfs_leds:s0
+
+# NFSParts
+get_prop(hal_audio_default, dirac_prop)
+set_prop(hal_audio_default, dirac_prop)
+allow hal_audio_default dirac_prop:file { open read getattr };

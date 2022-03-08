@@ -348,6 +348,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.rosy.rc \
     init.target.rc \
+    init.finix.rc \
     ueventd.qcom.rc
 
 # RenderScript HAL
@@ -464,3 +465,7 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 
 # Do not preoptimize prebuilts when building GApps
 DONT_DEXPREOPT_PREBUILTS := true
+
+# NFSParts
+PRODUCT_PACKAGES += \
+    NFSParts
