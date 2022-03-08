@@ -457,3 +457,6 @@ PRODUCT_PACKAGES += \
 
 # Optimize everything for preopt
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+
+# Do not preoptimize prebuilts when building GApps
+DONT_DEXPREOPT_PREBUILTS := true
