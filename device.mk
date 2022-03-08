@@ -356,8 +356,11 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
 # Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
+USE_REMOVE_PACKAGES ?= true
+ifeq ($(USE_REMOVE_PACKAGES),true)
+   PRODUCT_PACKAGES += \
+       RemovePackages
+endif
 
 # RIL
 PRODUCT_PACKAGES += \
