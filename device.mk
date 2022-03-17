@@ -338,6 +338,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# QTI Performance
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf/,$(TARGET_COPY_OUT_VENDOR)/etc/perf)
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
