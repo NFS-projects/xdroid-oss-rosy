@@ -32,6 +32,9 @@ TARGET_SCREEN_WIDTH := 720
 # Pixel Offline charging animation
 USE_PIXEL_CHARGER_IMAGES := true
 
+# Face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
