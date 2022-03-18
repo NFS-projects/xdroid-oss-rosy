@@ -30,7 +30,7 @@ TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 720
 
 # Pixel Offline charging animation
-TARGET_INCLUDE_PIXEL_CHARGER := true
+USE_PIXEL_CHARGER_IMAGES := true
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
