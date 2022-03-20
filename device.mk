@@ -478,5 +478,8 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 DONT_DEXPREOPT_PREBUILTS := true
 
 # NFSParts
-PRODUCT_PACKAGES += \
-    NFSParts
+USE_NFSparts ?= true
+ifeq ($(USE_NFSparts),true)
+   PRODUCT_PACKAGES += \
+       NFSParts
+endif
