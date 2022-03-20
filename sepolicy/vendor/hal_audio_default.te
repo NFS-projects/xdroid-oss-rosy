@@ -8,4 +8,3 @@ dontaudit hal_audio_default diag_device:chr_file rw_file_perms;
 # NFSParts
 get_prop(hal_audio_default, dirac_prop)
 set_prop(hal_audio_default, dirac_prop)
-allow hal_audio_default dirac_prop:file { open read getattr };
